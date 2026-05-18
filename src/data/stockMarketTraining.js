@@ -28,32 +28,37 @@ export const academyConfig = {
 };
 
 export const homeVerticals = {
-  badges: ["IT Solutions", "EdTech · Stock Market Training"],
-  headline: "Intelligent Technology & Market Education",
+  eyebrow: "AI WebX · Technology Partner & EdTech Academy",
+  headline: {
+    primary: "We build software for growing businesses.",
+    accent: "We train India's options traders — every trading day.",
+  },
   subhead:
-    "AI WebX builds software for businesses and trains Indian options traders with AI-assisted mentorship.",
+    "One team, two missions: ship AI-ready web and cloud products for companies, and run a structured 1-year mentorship program with daily market guidance and live simulation practice — so you learn with discipline, not tips.",
+  trustPoints: [
+    "Web · App · AI · Cloud",
+    "365-day program",
+    "Daily live mentorship",
+    "Risk-free market simulation",
+  ],
   tech: {
-    label: "Technology Solutions",
-    title: "AI, Blockchain & Cloud for Business",
-    bullets: [
-      "Custom web & app development",
-      "AI & ML systems",
-      "Enterprise-grade delivery",
-    ],
-    ctaPrimary: { label: "Explore Tech Services", href: "/services" },
-    ctaSecondary: { label: "Talk to Us", href: "/contact" },
+    audience: "For businesses & startups",
+    label: "Technology",
+    title: "Custom software, AI systems & cloud",
+    highlight:
+      "MVPs to enterprise platforms — web apps, automation, and AI that ships on time.",
+    ctaPrimary: { label: "Explore services", href: "/services" },
+    ctaSecondary: { label: "Talk to our team", href: "/contact" },
   },
   edtech: {
+    audience: "For learners & active traders",
     label: "AI WebX EdTech",
-    title: "1 Year Stock Market Mentorship",
-    bullets: [
-      "Daily mentorship · 365 days",
-      "Trade with ChatGPT & Claude",
-      "Live market simulation practice",
-    ],
-    ctaPrimary: { label: "View Academy Program", href: ACADEMY_PATH },
+    title: "1-year stock market mentorship",
+    highlight:
+      "NIFTY & options focus · ChatGPT & Claude workflows · practice on live data with paper money.",
+    ctaPrimary: { label: "View academy program", href: ACADEMY_PATH },
     ctaSecondary: {
-      label: "Start Live Market Simulation",
+      label: "Try live market simulation",
       href: academyConfig.simulationUrl,
       external: true,
     },
