@@ -17,6 +17,8 @@ import whoWeAre from "../../assets/images/who-we-are.webp";
 import ServiceItemCard from "../../components/Website/ServiceItemCard";
 import { Link } from "react-router-dom";
 import WorkFlow from "../../components/WorkFlow";
+import EdTechSpotlight from "../../components/EdTech/EdTechSpotlight";
+import { edtechCourseSchema } from "../../data/stockMarketTraining";
 
 // Lazy load components for better performance
 const Header = React.lazy(() => import("../../components/Website/Header"));
@@ -27,16 +29,15 @@ const Home = () => {
     <>
       <Helmet>
         <title>
-          AI WebX - Leading AI & Technology Solutions Provider | Custom Software
-          Development
+          AI WebX - AI Technology Solutions & EdTech Stock Market Training
         </title>
         <meta
           name="description"
-          content="AI WebX offers cutting-edge AI, Machine Learning, and Blockchain solutions. Transform your business with our custom software development and technology consulting services."
+          content="AI WebX offers AI, Machine Learning, Blockchain solutions and EdTech stock market training with 1-year daily mentorship for Indian options traders."
         />
         <meta
           name="keywords"
-          content="AI solutions, Machine Learning, Blockchain, Custom Software Development, Technology Consulting"
+          content="AI solutions, Machine Learning, Blockchain, EdTech, stock market training, NIFTY, BANKNIFTY, options trading India"
         />
         <link rel="canonical" href="https://www.aiwebx.com" />
 
@@ -68,11 +69,15 @@ const Home = () => {
         <script type="application/ld+json">
           {JSON.stringify(localBusinessSchema)}
         </script>
+        <script type="application/ld+json">
+          {JSON.stringify(edtechCourseSchema)}
+        </script>
       </Helmet>
 
       <div className="landing-bg">
         <Header />
         <Banner />
+        <EdTechSpotlight />
 
         <main>
           <section
@@ -93,16 +98,15 @@ const Home = () => {
                 </h2>
               </div>
               <h1 data-aos="fade-up" className="heading text-center">
-                We Provide the Best IT Solution Services
+                Technology & Education Services
               </h1>
               <p data-aos="fade-up" className="text-center max-w-2xl">
-                At AI WebX, we offer a full range of advanced technology
-                services designed to empower businesses with scalable,
-                intelligent, and secure solutions.
+                From AI and cloud solutions for businesses to EdTech stock
+                market mentorship — explore how AI WebX can help you grow.
               </p>
               <div
                 data-aos="fade-up"
-                className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-10 mx-auto max-w-6xl"
+                className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-10 mx-auto max-w-6xl"
               >
                 {services.map((item) => (
                   <ServiceItemCard key={item.id} item={item} />
@@ -142,6 +146,13 @@ const Home = () => {
                   <h3 className="text-center text-[1.3rem] font-medium relative z-10 group-hover:text-white transition-all duration-300">
                     {item.title}
                   </h3>
+                  {item.badge && (
+                    <span className="relative z-10 block text-center mt-2">
+                      <span className="inline-block px-2 py-0.5 text-xs rounded bg-secondary text-white">
+                        {item.badge}
+                      </span>
+                    </span>
+                  )}
                   <p className="text-gray-800 text-md mt-2 relative z-10 group-hover:text-white transition-all duration-300">
                     {item.desc}
                   </p>

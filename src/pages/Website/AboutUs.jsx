@@ -22,15 +22,15 @@ const AboutUs = () => {
     <>
       <Helmet>
         <title>
-          About Us - AI WebX | Leading AI & Technology Solutions Provider
+          About Us - AI WebX | Technology Solutions & EdTech Training
         </title>
         <meta
           name="description"
-          content="Learn more about AI WebX, a technology solutions provider offering AI, Machine Learning, and Blockchain solutions to transform your business."
+          content="Learn about AI WebX — AI, Machine Learning, Blockchain solutions and EdTech stock market training for Indian options traders."
         />
         <meta
           name="keywords"
-          content="About AI WebX, AI solutions, Machine Learning, Blockchain, Custom Software Development"
+          content="About AI WebX, AI solutions, EdTech, stock market training, Machine Learning, Blockchain"
         />
         <link rel="canonical" href="https://www.aiwebx.com/about-us" />
 
@@ -95,6 +95,12 @@ const AboutUs = () => {
                 group of forward-thinking developers, data scientists, and
                 innovators committed to transforming industries with custom
                 AI-driven products and services.
+              </p>
+              <p className="mt-4">
+                Through AI WebX EdTech, we also deliver stock market training
+                programs — including a 1-year daily mentorship for Indian
+                options traders covering market structure, risk management, and
+                AI-assisted trading workflows with ChatGPT and Claude.
               </p>
             </div>
             <div className="h-full w-full">

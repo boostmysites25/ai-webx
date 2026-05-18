@@ -50,6 +50,14 @@ export const services = [
       "Cutting-edge technology that creates innovative solutions for businesses and consumers alike.",
     link: "/services/vr-ar-development",
   },
+  {
+    id: 7,
+    title: "EdTech & Stock Market Training",
+    icon: require("../assets/images/icons/ai.png"),
+    description:
+      "1-year daily mentorship on Indian options markets with AI-assisted learning workflows.",
+    link: "/edtech/stock-market-training",
+  },
 ];
 
 
@@ -69,8 +77,29 @@ export const localBusinessSchema = {
   "@type": "LocalBusiness",
   name: "AI WebX",
   description:
-    "AI WebX is a globally recognized leader in delivering cutting-edge technology solutions including AI, Machine Learning, Blockchain, and Cloud Computing.",
+    "AI WebX delivers cutting-edge technology solutions and EdTech programs including stock market training for Indian options traders.",
   image: companyDetails.logo,
+  hasOfferCatalog: {
+    "@type": "OfferCatalog",
+    name: "AI WebX Services",
+    itemListElement: [
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Technology Solutions",
+        },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Course",
+          name: "AI WebX EdTech — Stock Market Training",
+          url: "https://www.aiwebx.in/edtech/stock-market-training",
+        },
+      },
+    ],
+  },
   address: {
     "@type": "PostalAddress",
     streetAddress: "10-47 Ambedkar Nagar, Jawaharnagar",
@@ -125,6 +154,11 @@ export const websitePagesLinks = [
     id: 3,
     link: "/services",
     label: "Services",
+  },
+  {
+    id: 6,
+    link: "/edtech/stock-market-training",
+    label: "Academy",
   },
   {
     id: 4,
@@ -420,12 +454,13 @@ export const industriesCompanyServe = [
   },
   {
     id: 10,
-    title: "Education",
+    title: "EdTech & Financial Literacy",
     img: require("../assets/images/industries/Education.webp"),
-    desc: " Personalized learning experiences, predictive analytics for student outcomes, and automated administrative processes using AI and ML.",
+    desc: "Stock market training, options education, and AI-assisted learning programs alongside personalized EdTech solutions for institutions.",
+    badge: "Stock Market Training",
   },
   {
-    id: 10,
+    id: 11,
     title: "Telecom",
     img: require("../assets/images/industries/Telecom.webp"),
     desc: " Boosting network efficiency, customer service, and fraud prevention through AI-driven solutions.",

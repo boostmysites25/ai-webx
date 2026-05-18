@@ -12,6 +12,7 @@ import {
   FaTwitter,
 } from "react-icons/fa";
 import { companyDetails, services } from "../data/constant";
+import { ACADEMY_PATH } from "../data/stockMarketTraining";
 
 const Footer = () => {
   return (
@@ -32,6 +33,9 @@ const Footer = () => {
                   {title}
                 </Link>
               ))}
+              <Link to={ACADEMY_PATH} className="font-medium text-secondary">
+                Stock Market Academy
+              </Link>
             </ul>
           </div>
         </div>
